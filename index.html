@@ -456,24 +456,30 @@ detailed, blowing bubble gum, green bubble gum <lora:Bubble Gum:0.65>, professio
             This is a highly realistic model
         </p>
     </section>
-
-    <section id="HardwareRequirements">
-        <h2>Hardware Requirements</h2>
+      
+      <section id="InstructPix2Pix">
+        <h2>instruct-pix2pix Model</h2>
         <hr>
-        <p>For running the SD models and extensions effectively, it is recommended to have the following hardware specifications:</p>
+        <p>The "instruct-pix2pix" model is a powerful image-to-image translation model that can be controlled using text prompts. It allows you to provide specific instructions to guide the image generation process. The model is particularly useful for tasks such as image colorization, style transfer, and conditional image synthesis.</p>
+        <p>You can find the "instruct-pix2pix" model and related resources in the following repository:</p>
         <ul>
-          <li>High-performance CPU with at least 32 cores</li>
-          <li>Ample RAM (at least 64GB)</li>
-          <li>Dedicated GPU with CUDA, a high-end NVIDIA GPU with at least 32GB memory</li>
-          <li>Fast storage (SSD or NVMe) with at least 4TB</li>
+          <li><a href="https://github.com/junyanz/instruct-pix2pix">instruct-pix2pix on GitHub</a></li>
+          <li><a href="https://github.com/junyanz/instruct-pix2pix">prompt to prompt GitHub</a></li>
         </ul>
+        <figure style="width: 100%">
+            <center><img width="100%" src="assets/010.png"></center>
+            <p class="caption" style="margin-bottom: 24px;">
+                SD Extenstions folder.
+            </p>
+        </figure>
+        <p>Make sure to follow the instructions provided in the repository to download and set up the model for your use.</p>
       </section>
       
       <section id="SDAdversarialAttackModels">
         <h2>SD Adversarial Attack Models</h2>
         <hr>
         <figure style="width: 100%">
-            <center><img width="85%" src="assets/009.png"></center>
+            <center><img width="100%" src="assets/009.png"></center>
             <p class="caption" style="margin-bottom: 24px;">
                 SD Extenstions folder.
             </p>
@@ -486,13 +492,25 @@ detailed, blowing bubble gum, green bubble gum <lora:Bubble Gum:0.65>, professio
         <p>Please ensure that these models are downloaded and available for use.</p>
       </section>
       
-      
+      <section id="HardwareRequirements">
+        <h2>Hardware Requirements</h2>
+        <hr>
+        <p>For running the SD models and extensions effectively, it is recommended to have the following hardware specifications:</p>
+        <ul>
+          <li>High-performance CPU with at least 32 cores</li>
+          <li>Ample RAM (at least 64GB)</li>
+          <li>Dedicated GPU with CUDA, a high-end NVIDIA GPU with at least 32GB memory</li>
+          <li>Fast storage (SSD or NVMe) with at least 4TB</li>
+        </ul>
+      </section>
+        
       <section id="BatchGeneration">
         <h2>Batch Generation</h2>
         <hr>
         <p>SD models offer the capability of batch generation, allowing the creation of multiple variations of the same image based on a single source image. This is particularly useful for generating large datasets with diverse image transformations. To enable batch generation, the following SD extension is required:</p>
         <ul>
-          <li><a href="https://github.com/yownas/seed_travel.git">seed_travel</a></li>
+          <li><a href="https://github.com/yownas/seed_travel.git">Seed travel</a></li>
+          <li><a href="https://github.com/yownas/seed_travel.git">Prompt matrix</a></li>
         </ul>
         <p>The "seed_travel" extension enables the perturbation and batch creation of numerous image variations, expanding the possibilities for creativity and experimentation.</p>
       </section>
