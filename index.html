@@ -228,7 +228,6 @@
 <link href='https://fonts.googleapis.com/css?family=Titillium+Web:400,600,400italic,600italic,300,300italic'
       rel='stylesheet' type='text/css'>
 <head>
-    
     <title>SynthDetX: Exploring Deep Learning for Synthetic Image Generation and Detection - Course Hackathon.</title>
     <meta property="og:description" content="SynthDetX: Exploring Deep Learning for Synthetic Image Generation and Detection - Course Hackathon"/>
     <link href="https://fonts.googleapis.com/css2?family=Material+Icons" rel="stylesheet">
@@ -333,6 +332,9 @@ detailed, blowing bubble gum, green bubble gum <lora:Bubble Gum:0.65>, professio
     <section id="results">
         <h2>Introduction and general approach:</h2>
         <hr>
+        <span style="font-size: 20px;">
+        We urge you to visit <a  href="https://www.reddit.com/r/StableDiffusion/"> Reddit</a> 
+        and get yourself aquainted with the different models available here: <a href="https://civitai.com/"> CivitAI</a> </span>
         <div class="flex-row">
             <p>
             <b>Our primary objective is to engage in the generation of synthetic images and subsequently 
@@ -362,10 +364,10 @@ detailed, blowing bubble gum, green bubble gum <lora:Bubble Gum:0.65>, professio
 
    
     <section id="SD"/>
-    <h2>SD models used for sysntehic image generarion (all of them should be downloaded)</h2>
+    <h2>Pre-trained SD Models: used for synthetic image generarion (all of them should be downloaded)</h2>
     <hr>
     <!-- <div class="flex-row"> -->
-        At the bare minimum, all these models should be readily available:
+        At the bare minimum, all these models should be readily available and installed into https://github.com/AUTOMATIC1111/stable-diffusion-webui
         <b><ol>
             <li>epicrealism_pureEvolutionV3.safetensors</li>
             <li>amIReal_V2.safetensors</li>
@@ -384,17 +386,11 @@ detailed, blowing bubble gum, green bubble gum <lora:Bubble Gum:0.65>, professio
             <center><img width="50%" src="./assets/002.png" style="margin-bottom: 20px;"></center>    
  
         </p>
-        <p>
-            <b>Name: AmIreal, Size: 2GB, Download link:.</b><BR>
-            This is a highly realistic model
-        </p>
+    
 
     <section id="SD"/>
     <h2>SD extensions (all of them should be downloaded AND installed)</h2>
-    <video autoplay>
-        <source src="assets/travel-00000.mp4" type="video/mp4">
-        Your browser does not support the video tag.
-      </video>
+    <hr>
     SD models offer powerful extensions that significantly enhance their capabilities. 
     One such notable extension is the <b>"seed travel"</b> extension, which enables the perturbation of an image,
      resulting in the batch creation of numerous variations of the same image. 
@@ -405,6 +401,19 @@ detailed, blowing bubble gum, green bubble gum <lora:Bubble Gum:0.65>, professio
       and generating large datasets with rich variations, ultimately pushing the boundaries of 
       synthetic image generation and expanding the scope of applications for SD models. 
 
+      <ul>
+        <li><a href="https://github.com/Zyin055/Config-Presets.git">Config-Presets</a></li>
+        <li><a href="https://github.com/kex0/batch-face-swap.git">batch-face-swap</a></li>
+        <li><a href="https://github.com/pharmapsychotic/clip-interrogator-ext.git">clip-interrogator-ext</a></li>
+        <li><a href="https://github.com/tkalayci71/embedding-inspector.git">embedding-inspector</a></li>
+        <li><a href="https://github.com/adieyal/sd-dynamic-prompts.git">sd-dynamic-prompts</a></li>
+        <li><a href="https://github.com/yownas/seed_travel.git">seed_travel</a></li>
+        <li><a href="https://github.com/toriato/stable-diffusion-webui-daam.git">stable-diffusion-webui-daam</a></li>
+        <li><a href="https://github.com/CodeExplode/stable-diffusion-webui-embedding-editor.git">stable-diffusion-webui-embedding-editor</a></li>
+        <li><a href="https://github.com/Klace/stable-diffusion-webui-instruct-pix2pix.git">stable-diffusion-webui-instruct-pix2pix</a></li>
+      </ul>
+
+      
       <figure style="width: 100%">
         <center><img width="100%" src="assets/007.png"></center>
         <p class="caption" style="margin-bottom: 24px;">
@@ -448,6 +457,46 @@ detailed, blowing bubble gum, green bubble gum <lora:Bubble Gum:0.65>, professio
         </p>
     </section>
 
+    <section id="HardwareRequirements">
+        <h2>Hardware Requirements</h2>
+        <hr>
+        <p>For running the SD models and extensions effectively, it is recommended to have the following hardware specifications:</p>
+        <ul>
+          <li>High-performance CPU with at least 32 cores</li>
+          <li>Ample RAM (at least 64GB)</li>
+          <li>Dedicated GPU with CUDA, a high-end NVIDIA GPU with at least 32GB memory</li>
+          <li>Fast storage (SSD or NVMe) with at least 4TB</li>
+        </ul>
+      </section>
+      
+      <section id="SDAdversarialAttackModels">
+        <h2>SD Adversarial Attack Models</h2>
+        <hr>
+        <figure style="width: 100%">
+            <center><img width="45%" src="assets/009.png"></center>
+            <p class="caption" style="margin-bottom: 24px;">
+                SD Extenstions folder.
+            </p>
+        </figure>
+        <p>SD models can also be utilized for adversarial attack scenarios. By leveraging their image synthesis capabilities, these models can generate adversarial examples that can deceive other computer vision models. Some popular SD adversarial attack models include:</p>
+        <ul>
+          <li><a href="https://github.com/WindVChen/DiffAttack">DiffAttack</a></li>
+          <li><a href="https://github.com/NVlabs/DiffPure">DiffPure</a></li>
+        </ul>
+        <p>Please ensure that these models are downloaded and available for use.</p>
+      </section>
+      
+      
+      <section id="BatchGeneration">
+        <h2>Batch Generation</h2>
+        <hr>
+        <p>SD models offer the capability of batch generation, allowing the creation of multiple variations of the same image based on a single source image. This is particularly useful for generating large datasets with diverse image transformations. To enable batch generation, the following SD extension is required:</p>
+        <ul>
+          <li><a href="https://github.com/yownas/seed_travel.git">seed_travel</a></li>
+        </ul>
+        <p>The "seed_travel" extension enables the perturbation and batch creation of numerous image variations, expanding the possibilities for creativity and experimentation.</p>
+      </section>
+      
 
     <section id="paper">
         <h2>Papers & references</h2>
